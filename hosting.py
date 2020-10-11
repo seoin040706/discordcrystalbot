@@ -51,5 +51,5 @@ async def on_message(message):
                 await message.author.add_roles(role)
                 print((message.author.name) + '님이 여성 역할을 부여받았습니다.')
 
-                access_token = os.environ["BOT_TOKEN"]
+access_token = os.environ["BOT_TOKEN"]
 bot.run(access_token)
