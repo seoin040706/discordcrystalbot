@@ -1,5 +1,6 @@
 import discord
 import asyncio
+import os
 from discord.ext import commands
 from discord.ext.commands import bot
 
@@ -50,4 +51,5 @@ async def on_message(message):
                 await message.author.add_roles(role)
                 print((message.author.name) + '님이 여성 역할을 부여받았습니다.')
 
-bot.run('NzY0MTA4MDYwNDA2NzEwMzIy.X4BdFg.bnzMAQpxx1V73h15AH58txUQpGA')
+                access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
